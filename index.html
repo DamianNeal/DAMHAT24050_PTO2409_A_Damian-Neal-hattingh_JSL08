@@ -1,10 +1,24 @@
-<!doctype html>
-<html>
-    <head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
-        <title></title>
-        <link rel="stylesheet" href="index.css">
-    </head>
-    <body>
-        <script src="index.js"></script>
-    </body>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bank Branch Singleton</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Bank Branch Singleton Pattern</h1>
+        <div class="branch-info">
+            <p><strong>Branch Info:</strong> <span id="branchInfo">Not set</span></p>
+        </div>
+        <button onclick="createBranch('Main Branch - Durban')">Create Branch A</button>
+        <button onclick="createBranch('Secondary Branch - Cape Town')">Create Branch B</button>
+        <br>
+        <button onclick="resetBranch()">Reset Singleton</button>
+        <p id="comparisonResult"></p>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
 </html>
